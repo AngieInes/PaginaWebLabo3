@@ -1,182 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+<link rel="stylesheet" href="css.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sección dedicada a los personajes de la serie Gravity Falls">
-    <title>Personajes de Gravity Falls</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Cabin', sans-serif;
-            margin: 0;
-            padding: 0 10%;
-            background-color: #FF7043;
-            line-height: 1.6;
-        }
-
-        /* Encabezado */
-        header {
-            background-color: #fc5420;
-            margin-bottom: 20px;
-            padding: 20px;
-            color: white;
-            text-align: center;
-            border-radius: 10px;
-
-        }
-
-        /* Barra de navegación */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #fc5420;
-            padding: 10px;
-            border-radius: 10px;
-
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: #fff;
-            color: #f8d460;
-            border-radius: 5px;
-        }
-
-        /* Sección de personajes */
-        section {
-            padding: 60px;
-            text-align: center;
-        }
-
-        h1,
-        h2,
-        h3,
-        p,
-        ul {
-            color: #fdfdfe;
-        }
-
-        .content {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .characters {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .character {
-            display: flex;
-            align-items: flex-start;
-            /* Alinea los elementos al inicio */
-            gap: 15px;
-            padding: 10px;
-        }
-
-        .character img {
-            max-width: 100px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .character-content {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .character h3 {
-            margin: 0;
-            margin-bottom: 5px;
-            text-align: left;
-        }
-
-        .character p {
-            text-align: left;
-            margin: 0;
-        }
-
-
-        /* Ajustes para pantallas pequeñas */
-        @media (max-width: 768px) {
-            .character {
-                width: 100%;
-            }
-        }
-
-        /* Pie de página */
-        footer {
-            background-color: #fc5420;
-            color: #fdfdfe;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-            border-radius: 10px;
-
-        }
-
-        .barra {
-            list-style: none;
-            display: flex;
-            justify-content: right;
-            padding: 0;
-            margin: 0;
-        }
-
-        .barra>li {
-            position: relative;
-        }
-
-        .barra>li>a {
-            display: block;
-            padding: 0px 15px;
-            color: #fdfdfe;
-            text-decoration: none;
-        }
-
-        .barra li:hover {
-            background-color: #fc5420;
-            border-radius: 10px;
-        }
-
-        .barra-vertical {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            display: none;
-            list-style: none;
-            background-color: #fc5420;
-            padding: 0;
-            margin: 0;
-            border-radius: 5px;
-        }
-
-        .barra-vertical li a {
-            display: block;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-
-        .barra-vertical li a:hover {
-            background-color: #fff;
-            color: #f8d460;
-        }
-
-        .barra>li:hover .barra-vertical {
-            display: block;
-        }
-    </style>
-</head>
 
 <body>
     <!-- Encabezado de la página -->
@@ -193,32 +18,59 @@
                     <li><a href="Personajes.html#Dipper">Dipper</a> </li>
                     <li><a href="Personajes.html#Mabel">Mabel</a> </li>
                     <li><a href="Personajes.html#Stan">Tío Stan</a> </li>
+                    <li><a href="Personajes.html#Soos">Soos</a> </li>
+                    <li><a href="Personajes.html#Wendy">Wendy</a> </li>
                 </ul>
             </li>
             <a href="Episodios.html">Episodios</a>
+            <li><a href="Creacion.html">Creacion</a>
+                <ul class="barra-vertical">
+                    <li><a href="Creacion.html#creador">Creador</a> </li>
+                    <li><a href="Creacion.html#producion">Producción</a> </li>
+                    <li><a href="Creacion.html#directores">Directores</a> </li>
+                    <li><a href="Creacion.html#musica">Musica</a> </li>
+                </ul>
+            </li>
+            <li><a href="Merchandising.html">Merchandising</a>
+                <ul class="barra-vertical">
+                    <li><a href="Merchandising.html#libros">Libros</a> </li>
+                    <li><a href="Merchandising.html#juguetes">Juguetes</a> </li>
+                    <li><a href="Merchandising.html#videojuegos">Videojuegos</a> </li>
+                    <li><a href="Merchandising.html#ropa">Ropa</a></li>
+                </ul>
+            </li>
             <a href="teorias.html">Teorías</a>
-
     </nav>
 
     <!-- Sección de personajes -->
     <section id="personajes">
         <div class="content">
-            <div class="characters">
+
+            <article id="Dipper">
                 <div class="character">
-                    <h3>Dipper Pines</h3>
                     <img src="imagenes/dipper.jpg" alt="Dipper Pines">
+                    <h3>Dipper</h3>
                     <div class="character-content">
-                        <p>Un chico de 12 años con un gran intelecto y una interminable curiosidad. Antisocial, algo
+                        <p>Nombre real: Mason Pines</p>
+                        <p>Edad: 12 años</p>
+                        <p>Nacimiento: 31 de agosto de 1999</p>
+                        <p>Un chico con un gran intelecto y una interminable curiosidad. Antisocial, algo
                             torpe,
                             pero de buen corazón, encuentra un diario en sus vacaciones de verano en Gravity Falls y
                             decide
                             resolver los misterios que envuelven al pueblo.</p>
                     </div>
                 </div>
+            </article>
+
+            <article id="Mabel">
                 <div class="character">
-                    <h3>Mabel Pines</h3>
                     <img src="imagenes/mabel.jpg" alt="Mabel Pines">
+                    <h3>Mabel</h3>
                     <div class="character-content">
+                        <p>Nombre real: Mabel Pines</p>
+                        <p>Edad: 12 años</p>
+                        <p>Nacimiento: 31 de agosto de 1999</p>
                         <p>Hermana melliza de Dipper. Una niña alegre y colorida. Aunque puede llegar a ser muy
                             impulsiva a
                             veces, es bastante creativa y aventurera. Quiere ayudar a su hermano a resolver los
@@ -226,10 +78,16 @@
                             del pueblo de Gravity Falls, además de encontrar a su “amor de verano”.</p>
                     </div>
                 </div>
+            </article>
+
+            <article id="Stan">
                 <div class="character">
-                    <h3>Grunkle Stan</h3>
-                    <img src="imagenes/tio stan.jpg">
+                    <img src="imagenes/tio stan.jpg" alt="Grunkle Stan">
+                    <h3>Tío Stan</h3>
                     <div class="character-content">
+                        <p>Nombre real: Stanley Pines</p>
+                        <p>Edad: 60 años</p>
+                        <p>Nacimiento: 15 de junio de 1952</p>
                         <p>Tío-abuelo de los mellizos Pines. Un hombre anciano sin escrúpulos a la hora de hacer
                             negocios
                             pero que tiene sus límites morales, sobre todo en lo que respecta a su familia. Gruñón,
@@ -238,8 +96,39 @@
                             esconde muchos secretos...</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+
+            <article id="Soos">
+                <div class="character">
+                    <img src="imagenes/Soos.jpg" alt="Soos">
+                    <h3>Soos</h3>
+                    <div class="character-content">
+                        <p>Nombre real: Jesús Alzamirano Ramírez</p>
+                        <p>Edad: 21 años</p>
+                        <p>Nacimiento: 13 de julio de 1989</p>
+                        <p>Es el empleado de Stan en la
+                            Cabaña del Misterio. Un hombre veinteañero, bonachón, ingenuo, pero siempre
+                            dispuesto a dar una mano. Ve a Stan como una figura paterna, aunque este solo lo
+                            ve como un asistente más.</p>
+                    </div>
+                </div>
+            </article>
+            <article id="Wendy">
+                <div class="character">
+                    <img src="imagenes/Wendy.jpg" alt="Wendy">
+                    <h3>Wendy</h3>
+                    <div class="character-content">
+                        <p>Nombre real: Wendy Berble Corduroy</p>
+                        <p>Edad: 16 años</p>
+                        <p>Nacimiento: 4 de septiembre de 1996</p>
+                        <p>La segunda empleada del tío Stan. Una chica adolescente que trabaja en la Cabaña del Misterio
+                            como oficio de verano. Rebelde pero
+                            de carácter relajado, acompaña a los gemelos Pines en varias de sus aventuras y
+                            a veces esta acompaña de sus amigos adolescentes.</p>
+                    </div>
+                </div>
+
+            </article>
     </section>
 
     <!-- Pie de página -->
