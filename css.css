@@ -486,3 +486,16 @@ footer p {
 #ropa {
     scroll-margin-top: 100px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label,
+input,
+textarea {
+    margin: 10px 0;
+}
