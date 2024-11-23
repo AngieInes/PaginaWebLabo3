@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="css.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/circle-up?f=classic&s=solid">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css.css">
+
     <meta name="Episodios" content="seccion que enumera los episodios de la serie Gravity Falls">
 
 </head>
@@ -13,41 +20,44 @@
     <!-- Encabezado de la página -->
     <header>
         <h1>Episodios de Gravity Falls</h1>
+        <!-- Barra de navegación -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <nav class="menu" id="menu">
+                <ul class="barra">
+                    <a href="index.html">Inicio</a>
+                    <li><a href="Personajes.html">Personajes</a>
+                        <ul class="barra-vertical">
+                            <li><a href="Personajes.html#Dipper">Dipper</a> </li>
+                            <li><a href="Personajes.html#Mabel">Mabel</a> </li>
+                            <li><a href="Personajes.html#Stan">Tío Stan</a> </li>
+                            <li><a href="Personajes.html#Soos">Soos</a> </li>
+                            <li><a href="Personajes.html#Wendy">Wendy</a> </li>
+                        </ul>
+                    </li>
+                    <a href="Episodios.html">Episodios</a>
+                    <li><a href="Creacion.html">Creacion</a>
+                        <ul class="barra-vertical">
+                            <li><a href="Creacion.html#creador">Creador</a> </li>
+                            <li><a href="Creacion.html#producion">Producción</a> </li>
+                            <li><a href="Creacion.html#directores">Directores</a> </li>
+                            <li><a href="Creacion.html#musica">Musica</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="Merchandising.html">Merchandising</a>
+                        <ul class="barra-vertical">
+                            <li><a href="Merchandising.html#libros">Libros</a> </li>
+                            <li><a href="Merchandising.html#juguetes">Juguetes</a> </li>
+                            <li><a href="Merchandising.html#videojuegos">Videojuegos</a> </li>
+                            <li><a href="Merchandising.html#ropa">Ropa</a></li>
+                        </ul>
+                    </li>
+                    <a href="teorias.html">Teorías</a>
+                    <a href="galeria.html">Galeria</a>
+            </nav>
+
     </header>
 
-    <!-- Barra de navegación -->
-    <nav class="menu" id="menu">
-        <ul class="barra">
-            <a href="index.html">Inicio</a>
-            <li><a href="Personajes.html">Personajes</a>
-                <ul class="barra-vertical">
-                    <li><a href="Personajes.html#Dipper">Dipper</a> </li>
-                    <li><a href="Personajes.html#Mabel">Mabel</a> </li>
-                    <li><a href="Personajes.html#Stan">Tío Stan</a> </li>
-                    <li><a href="Personajes.html#Soos">Soos</a> </li>
-                    <li><a href="Personajes.html#Wendy">Wendy</a> </li>
-                </ul>
-            </li>
-            <a href="Episodios.html">Episodios</a>
-            <li><a href="Creacion.html">Creacion</a>
-                <ul class="barra-vertical">
-                    <li><a href="Creacion.html#creador">Creador</a> </li>
-                    <li><a href="Creacion.html#producion">Producción</a> </li>
-                    <li><a href="Creacion.html#directores">Directores</a> </li>
-                    <li><a href="Creacion.html#musica">Musica</a> </li>
-                </ul>
-            </li>
-            <li><a href="Merchandising.html">Merchandising</a>
-                <ul class="barra-vertical">
-                    <li><a href="Merchandising.html#libros">Libros</a> </li>
-                    <li><a href="Merchandising.html#juguetes">Juguetes</a> </li>
-                    <li><a href="Merchandising.html#videojuegos">Videojuegos</a> </li>
-                    <li><a href="Merchandising.html#ropa">Ropa</a></li>
-                </ul>
-            </li>
-            <a href="teorias.html">Teorías</a>
-            <a href="galeria.html">Galeria</a>
-    </nav>
 
 
     <section id="episodios">
@@ -454,4 +464,17 @@
         <p>© 2024 Gravity Falls Fanpage | Creado por Angie Ines</p>
     </footer>
 
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("menu_bar");
+            if (x.className === "") {
+                x.className += "responsive";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+
 </body>
+
+</html>
