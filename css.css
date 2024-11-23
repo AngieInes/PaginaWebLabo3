@@ -88,13 +88,37 @@ nav a:hover {
     border-radius: 10px;
 }
 
-
-.character-content h3 {
-    text-align: center;
+/*seccion de personajes*/
+.personajes {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente si es necesario */
 }
 
-.character-content p {
+.personajes img {
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+    width: 200px;
+    /* Ajusta según tu necesidad */
+    margin: 30px;
+    border-radius: 10px;
+
+}
+
+.personajes h3 {
     text-align: left;
+    margin: 5px;
+}
+
+.personajes p {
+    text-align: left;
+    margin: 5px;
+}
+
+.texto {
+    max-width: 400px;
+    margin: 10px;
+    text-align: center;
 }
 
 /*Barras de menu*/
@@ -191,12 +215,6 @@ footer p {
 
 }
 
-.character-content {
-    max-width: 600px;
-    margin: 20px;
-    text-align: left;
-}
-
 .character h3 {
     text-align: left;
     margin: 10px;
@@ -207,11 +225,6 @@ footer p {
     margin: 10px;
 
 }
-
-.icon {
-    display: none;
-}
-
 
 /* Ajustes de texto para las temporadas de episodios */
 .primera-temporada h2 {
@@ -261,12 +274,23 @@ footer p {
 
 
 /* seccion de merchandesing */
+
 .libros h2 {
     text-align: center;
     color: #f8d460;
     margin: 10px auto;
 
 }
+
+.libros img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+
 
 .juguetes h2 {
     text-align: center;
@@ -276,17 +300,15 @@ footer p {
 }
 
 .juguetes img {
-    width: 400px;
-    /* Ajusta el tamaño de la imagen */
+    width: 50%;
     height: auto;
     border-radius: 10px;
     display: block;
-    /* Asegura que la imagen se comporte como un bloque */
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 .juguetes h3 {
-    text-align: center;
+    text-align: left;
     margin: 5px auto;
 
 }
@@ -298,40 +320,35 @@ footer p {
 }
 
 .videojuegos img {
-    width: 400px;
-    /* Ajusta el tamaño de la imagen */
+    width: 300px;
     height: auto;
     border-radius: 10px;
     display: block;
-    /* Asegura que la imagen se comporte como un bloque */
-    margin: 10px auto;
+    margin: 15px auto;
+}
+
+.videojuegos li {
+    margin-bottom: 10%;
+    margin-top: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .ropa h2 {
     text-align: center;
     color: #f8d460;
-    margin: 10px auto;
+    margin: 10%;
 }
 
 .ropa img {
     width: 200px;
-    /* Ajusta el tamaño de la imagen */
     height: auto;
     border-radius: 10px;
-    display: block;
-    /* Asegura que la imagen se comporte como un bloque */
-    margin: 10px auto;
+    display: inline;
+    margin: 15px auto;
 }
 
-.libros img {
-    width: 300px;
-    /* Ajusta el tamaño de la imagen */
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    /* Asegura que la imagen se comporte como un bloque */
-    margin: 10px auto;
-}
+
 
 .container {
     width: 100%;
@@ -439,9 +456,46 @@ textarea {
     margin: 10px auto;
 }
 
-@media screen and (max-width: 768px) {
+/*ocultar menu hamburguesa*/
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+
+    }
+
+    .berra {
+        display: none;
+    }
+
+    .barra-vertical {
+        display: none;
+    }
+
+    /*menu hamburguesa*/
+    .icon {
+        display: block;
+        padding-right: 0.6rem;
+        text-align: right;
+        top: 50px;
+        right: 10px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 2;
+    }
+
     body {
-        padding: 0 5%;
+        max-width: 100%;
+        padding: 0;
     }
 
     header img {
@@ -484,6 +538,8 @@ textarea {
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     }
 
+
+
     .menu.visible {
         opacity: 1;
         visibility: visible;
@@ -494,13 +550,10 @@ textarea {
         align-items: end;
     }
 
-    .icon {
-        display: block;
-        padding-right: 0.6rem;
-        text-align: right;
-    }
 
     nav ul {
         display: none;
     }
+
+
 }
