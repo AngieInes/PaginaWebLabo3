@@ -90,35 +90,30 @@ nav a:hover {
 
 /*seccion de personajes*/
 .personajes {
-    display: flex;
+    display: block;
     align-items: center;
     /* Alinea verticalmente si es necesario */
 }
 
 .personajes img {
-    margin-right: 10px;
-    /* Espacio entre la imagen y el texto */
     width: 200px;
-    /* Ajusta según tu necesidad */
-    margin: 30px;
+    height: auto;
     border-radius: 10px;
+    display: block;
+    margin: 15px auto;
 
 }
 
 .personajes h3 {
-    text-align: left;
+    text-align: center;
     margin: 5px;
+
 }
+
 
 .personajes p {
-    text-align: left;
-    margin: 5px;
-}
-
-.texto {
-    max-width: 400px;
-    margin: 10px;
     text-align: center;
+    margin: 10px;
 }
 
 /*Barras de menu*/
@@ -254,6 +249,12 @@ footer p {
 .creador h2 {
     text-align: center;
     color: #f8d460;
+    margin: 15px;
+    margin-top: 5%;
+}
+
+.creador p {
+    text-align: center;
     margin: 10px;
 }
 
@@ -264,7 +265,7 @@ footer p {
     border-radius: 10px;
     display: block;
     /* Asegura que la imagen se comporte como un bloque */
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 .produccion h2 {
@@ -300,10 +301,10 @@ footer p {
 }
 
 .juguetes img {
-    width: 50%;
+    width: 300px;
     height: auto;
     border-radius: 10px;
-    display: block;
+    display: inline-block;
     margin: 15px auto;
 }
 
@@ -337,7 +338,7 @@ footer p {
 .ropa h2 {
     text-align: center;
     color: #f8d460;
-    margin: 10%;
+    margin: 5%;
 }
 
 .ropa img {
@@ -369,12 +370,20 @@ footer p {
 .gallery img {
     width: 100%;
     height: 100%;
+    display: block;
+    border-radius: 10px;
     object-fit: cover;
     border: 6px solid white;
 }
 
+/*Temporadas*/
+#primera-temporada {
+    scroll-margin-top: 100px;
+}
 
-
+#segunda-temporada {
+    scroll-margin-top: 100px;
+}
 
 /*Personajes*/
 #Dipper {
@@ -407,10 +416,6 @@ footer p {
 }
 
 #directores {
-    scroll-margin-top: 100px;
-}
-
-#musica {
     scroll-margin-top: 100px;
 }
 
