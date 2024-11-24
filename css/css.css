@@ -105,14 +105,13 @@ nav a:hover {
 }
 
 .personajes h3 {
-    text-align: center;
+    text-align: left;
     margin: 5px;
 
 }
 
-
 .personajes p {
-    text-align: center;
+    text-align: left;
     margin: 10px;
 }
 
@@ -155,17 +154,20 @@ section#inicio {
 
 section#inicio .content {
     text-align: left;
+    margin: 10px;
+    margin-top: 10px;
 }
 
 section#inicio h2 {
     font-size: 2em;
     color: #f8d460;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 section#inicio p {
     font-size: 1em;
+    margin: 15px;
     margin-bottom: 15px;
 }
 
@@ -218,8 +220,8 @@ footer p {
 .character-content p {
     text-align: left;
     margin: 10px;
-
 }
+
 
 /* Ajustes de texto para las temporadas de episodios */
 .primera-temporada h2 {
@@ -254,7 +256,7 @@ footer p {
 }
 
 .creador p {
-    text-align: center;
+    text-align: left;
     margin: 10px;
 }
 
@@ -292,7 +294,6 @@ footer p {
 }
 
 
-
 .juguetes h2 {
     text-align: center;
     color: #f8d460;
@@ -304,8 +305,9 @@ footer p {
     width: 300px;
     height: auto;
     border-radius: 10px;
-    display: inline-block;
+    display: inline;
     margin: 15px auto;
+    justify-content: center;
 }
 
 .juguetes h3 {
@@ -354,27 +356,75 @@ footer p {
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     margin: 0 auto;
+    align-content: center;
+
 }
 
 .gallery {
     flex-basis: 33%;
-    margin: 2px;
+    margin: 5px;
     opacity: 0.85;
     cursor: pointer;
+    justify-content: center;
+
 }
 
 .gallery img {
     width: 100%;
     height: 100%;
-    display: block;
     border-radius: 10px;
     object-fit: cover;
     border: 6px solid white;
 }
+
+.gallery:hover {
+    opacity: 2;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label,
+input,
+textarea {
+    margin: 10px 0;
+}
+
+/*teorias*/
+.teorias p {
+    margin: 5px;
+}
+
+.teorias img {
+    width: 400px;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    /* Asegura que la imagen se comporte como un bloque */
+    margin: 10px auto;
+}
+
+/*ocultar menu hamburguesa*/
+.icon {
+    display: none;
+}
+
+nav ul {
+    margin-top: 3%;
+}
+
 
 /*Temporadas*/
 #primera-temporada {
@@ -435,44 +485,6 @@ footer p {
 #ropa {
     scroll-margin-top: 100px;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-}
-
-label,
-input,
-textarea {
-    margin: 10px 0;
-}
-
-/*teorias*/
-.teorias p {
-    margin: 5px;
-}
-
-.teorias img {
-    width: 400px;
-    /* Ajusta el tamaño de la imagen */
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    /* Asegura que la imagen se comporte como un bloque */
-    margin: 10px auto;
-}
-
-/*ocultar menu hamburguesa*/
-.icon {
-    display: none;
-}
-
-nav ul {
-    margin-top: 3%;
-}
-
 
 @media (max-width: 480px) {
 
